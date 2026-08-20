@@ -9,6 +9,17 @@ Report-only. This skill never places trades and never should. Every
 run must pass through the Risk Reviewer step — do not shortcut it
 even if the Synthesis draft looks confident.
 
+**Language:** the final report (Step 5 output, everything published
+to Supabase) must be written entirely in Vietnamese, with precise,
+faithful financial terminology — not a loose paraphrase (e.g. "tỷ
+giá", "lãi suất", "thanh khoản", "vị thế đòn bẩy", "tỷ lệ funding",
+"khối lượng giao dịch", "chỉ số biến động", "vốn hóa thị trường", "bán
+khống bị ép đóng vị thế (short squeeze)"). Specialist agents in Step 2
+may reason internally in English, but their written outputs — and
+definitely the final report.md — must be Vietnamese. Numbers, tickers
+(BTC, ETH, DXY, VIX), and standard English finance abbreviations may
+stay as-is.
+
 ## Step 1 — Fetch data
 
 Run:
@@ -67,14 +78,15 @@ suggested stop-loss level, plus the strongest counter-case it found.
 
 ## Step 5 — Report Writer
 
-Combine everything into one Markdown report with these sections, in
-order: Executive summary, Macro read, On-chain/market read, Sentiment
-read, Synthesis, Risk Reviewer's counter-case, Risk-budget
-recommendation, Data availability (list any `"unavailable"` sources
-from Step 1), and a fixed disclaimer:
+Combine everything into one Vietnamese Markdown report with these
+sections, in order (Vietnamese headings): Tóm tắt tổng quan, Nhận
+định vĩ mô, Nhận định thị trường/on-chain, Nhận định tâm lý, Tổng
+hợp, Phản biện rủi ro (bắt buộc), Khuyến nghị khẩu phần rủi ro, Tình
+trạng dữ liệu (list any `"unavailable"` sources from Step 1), and this
+fixed disclaimer:
 
-> This is a decision-support tool, not investment advice. Final
-> decisions are the user's alone.
+> *Đây là công cụ hỗ trợ ra quyết định, không phải lời khuyên đầu tư.
+> Quyết định cuối cùng luôn thuộc về người dùng.*
 
 ## Step 6 — Publish
 
